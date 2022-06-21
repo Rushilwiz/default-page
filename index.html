@@ -55,6 +55,11 @@
                 background-position: 100% 0;
             }
         }
+
+        img {
+            display: none;
+        }
+
     </style>
 </head>
 <body>
@@ -65,7 +70,7 @@
     <a href="https://nginx.org/">nginx.org</a>.<br>
     Commercial support is available at
     <a href="https://nginx.com/">nginx.com</a>.</p>
-    <img src="crucial.gif" />
+    <img id="gif" src="crucial.gif" />
 
     <p><em>"If at first you don't succeed, skydiving may not be for you."</em></p>
 
@@ -74,6 +79,8 @@
     <script>
         window.onclick = () => {
             document.getElementById("startup").play();
+            document.getElementById("gif").style.display = "block"
+
         }
     </script>
 </body>
