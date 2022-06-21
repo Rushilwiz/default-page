@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrucialNET</title>
+    <style>
+        body {
+            margin: auto;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 35em;
+            font-family: Tahoma, Verdana, Arial, sans-serif;
+        }
+
+        h1 {
+            margin-bottom: 0;
+        }
+
+        p:first {
+            margin-bottom: 0;
+        }
+
+        #shadowBox {
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.2);
+            /* Black w/opacity/see-through */
+            border: 3px solid;
+        }
+
+        .rainbow {
+            text-align: center;
+            text-decoration: underline;
+        }
+        .rainbow_text_animated {
+            background: linear-gradient(270deg, rgba(255,0,0,1) 0%, rgba(255,154,0,1) 10%, rgba(208,222,33,1) 20%, rgba(79,220,74,1) 30%, rgba(63,218,216,1) 40%, rgba(47,201,226,1) 50%, rgba(28,127,238,1) 60%, rgba(95,21,242,1) 70%, rgba(186,12,248,1) 80%, rgba(251,7,217,1) 90%, rgba(255,0,0,1) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: rainbow_animation 6s ease-in-out infinite;
+            background-size: 400% 100%;
+        }
+
+        @keyframes rainbow_animation {
+            0%,100% {
+                background-position: 0 0;
+            }
+
+            50% {
+                background-position: 100% 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to <span class="rainbow rainbow_text_animated">CrucialNET</span>!</h1>
+    <p>If you see this page, Rushil is doing a good job. Further configuration is required. Thanks for visitng!</p>
+
+    <p>For online documentation and support please refer to
+    <a href="https://nginx.org/">nginx.org</a>.<br>
+    Commercial support is available at
+    <a href="https://nginx.com/">nginx.com</a>.</p>
+    <img src="crucial.gif" />
+
+    <p><em>"If at first you don't succeed, skydiving may not be for you."</em></p>
+
+    <audio id="startup" src="startup.mp3"></audio>
+
+    <script>
+        window.onclick = () => {
+            document.getElementById("startup").play();
+        }
+    </script>
+</body>
+</html>
+
